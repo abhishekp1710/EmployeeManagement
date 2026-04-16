@@ -55,8 +55,9 @@ public class EmployeeController {
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
 		service.deleteEmployee(id);
+		System.out.println("Hey");
 		return ResponseEntity.noContent().build();
-		System.out.println("");
+		
 	}
 
 }
